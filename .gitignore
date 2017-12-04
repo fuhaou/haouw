@@ -1,0 +1,8 @@
+.idea/*
+data/cache/*
+public/upload/*
+public/statics/asset/libs/*
+application/libs/DbTable/*
+library/*
+scripts/builds/deploy/*
+application/modules/default/controllers/helpers/Debug.php*
