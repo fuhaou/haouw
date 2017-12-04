@@ -1,0 +1,25 @@
+
+<div class="container mt-30">
+    <div class="subpage">
+        <div class="subpage-content">
+            <div class="row">
+                <div class="col-lg-3" style="margin-top:20px;">
+                    <ul class="list-group">
+                        <?php foreach ($this->allRecruitmentData as $data) { ?>
+                            <li class="list-group-item">
+                                <a href="<?php echo $this->recruitmentUrl($data[DbTable_Recruitment::COL_RECRUITMENT_ID], $data[DbTable_Recruitment::COL_RECRUITMENT_TITLE]);?>">
+                                    <?php echo $data[DbTable_Recruitment::COL_RECRUITMENT_TITLE];?></a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+                <div class="col-lg-9 page_content col-xs-12 col-md-8">
+                    <h3 class=" normal text-uppercase text-center"><?php echo $this->info[DbTable_Recruitment::COL_RECRUITMENT_TITLE];?></h3>
+                    <hr class="mini blue">
+                    <div class="col-md-12 fck-content" style="margin-top:20px;"><?php echo $this->info[DbTable_Recruitment::COL_RECRUITMENT_CONTENT];?></div>
+                    <?php echo $this->render('layout/add-this.phtml');?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

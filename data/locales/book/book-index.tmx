@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+<header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" >
+</header>
+<body>
+	<tu tuid='admin_index_header'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Administration - Danh sách quản trị viên]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Administration - Listing]]></seg>
+		</tuv>
+	</tu>
+
+	<tu tuid='book_index_management'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Quản Lý Sách]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Book M]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='book_index_input_title'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Tên Sách]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Book Title]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='book_index_input_author'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Tác Giả]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Book Author]]></seg>
+		</tuv>
+	</tu>
+
+	<tu tuid='book_index_input_code'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Mã Sách]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[IBook Code]]></seg>
+		</tuv>
+	</tu>
+
+	<tu tuid='book_index_input_description'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Miêu tả]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Book escription]]></seg>
+		</tuv>
+	</tu>
+
+	<tu tuid='book_index_input_created_at'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Thời gian tạo]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Book created at]]></seg>
+		</tuv>
+	</tu>
+</body>

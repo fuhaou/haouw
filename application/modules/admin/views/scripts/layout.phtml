@@ -1,0 +1,66 @@
+<?php echo $this->doctype(); ?>
+<!--[if lt IE 7 ]> <html lang="" class="ie6 oldie no-js" dir="ltr"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="" class="ie7 oldie no-js" dir="ltr"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="" class="ie8 oldie no-js" dir="ltr"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="" class="ie9 no-js" dir="ltr"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" dir="ltr" lang=""><!--<![endif]-->
+<head>
+    <meta name="robots" content="NOINDEX,NOFOLLOW" />
+    <meta name="Googlebot" content="NOINDEX,NOFOLLOW" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CMS</title>
+    <base href="/statics/asset/admin/" />
+    <?php echo $this->headLink(); ?>
+    <?php echo $this->headScript(); ?>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <header class="header-full">
+            <div class="header">
+                <nav class="navbar">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" id="header_menu_btn" data-target="header_menu">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="/"><img width="35px" src="images/home.png" alt="Homepage" class="img-responsive"></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div id="header_menu" class="header_menu">
+                            <?php echo $this->menu($this->adminInfo->{DbTable_Admin::COL_ADMIN_ID}); ?>
+                            <!--<div id="btn_search_global"><i class="fa fa-search" aria-hidden="true"></i></div>-->
+                            <ul id="header_welcome" class="nav navbar-nav">
+                                <li>
+                                    <a href="javascript:void(0)"><span class="fa fa-user"></span> <?php echo $this->adminInfo->admin_fullname; ?> <span class="caret"></span></a>
+                                    <ul>
+                                        <li><a href="/admin/change-password"><i class="fa fa-user" aria-hidden="true"></i> Change Password</a></li>
+                                        <li><a href="/login/logout" title=""><i class="fa fa-sign-out" aria-hidden="true"></i><?php echo $this->translate->_('admin_layout_log_out');?></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </header>
+        <div class="main-full">
+            <div class="main">
+                <div class="container">
+                    <?php echo $this->layout()->content; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <?php echo $this->render('layout/dialog/listing.alert-manual-action.phtml');?>
+    <?php echo $this->render('layout/dialog/processing.phtml');?>
+    <?php echo $this->render('layout/dialog/alert.phtml');?>
+</body>
+</html>

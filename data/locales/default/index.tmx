@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+<header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" >
+</header>
+<body>
+    <tu tuid='index_partner'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Đối tác của chúng tôi]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Our partner]]></seg>
+        </tuv>
+        <tuv xml:lang="zh">
+            <seg><![CDATA[Our partner]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='index_project'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[những dự án của Savemoney]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[projects of Savemoney]]></seg>
+        </tuv>
+        <tuv xml:lang="zh">
+            <seg><![CDATA[projects of Savemoney]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='index_footer_information'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Thông tin Savemoney]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Savemoney Information]]></seg>
+        </tuv>
+        <tuv xml:lang="zh">
+            <seg><![CDATA[Savemoney Information]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='index_'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[aaaa]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[aaaa]]></seg>
+        </tuv>
+        <tuv xml:lang="zh">
+            <seg><![CDATA[aaaa]]></seg>
+        </tuv>
+    </tu>
+
+</body>

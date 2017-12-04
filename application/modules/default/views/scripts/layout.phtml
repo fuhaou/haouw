@@ -1,0 +1,166 @@
+<?php echo $this->doctype(); ?>
+<?php
+$host =  Application_Function_Common::currentUrl();
+$url = Application_Function_Common::fullCurrentUrl();
+$imagePath = isset($this->banner[DbTable_Banner::COL_BANNER_IMAGE]) ? $this->banner[DbTable_Banner::COL_BANNER_IMAGE] : null;
+$thumbnail = null;
+$mj = isset($_GET['xp']) ? $_GET['xp'] : '';
+if (isset($this->metaImage) && $this->metaImage) {
+    $imagePath = $this->metaImage;
+}
+if ($imagePath && $imagePath!='none') {
+    $thumbnail = $this->thumb($imagePath, 400);
+    $thumbnail = $host . $thumbnail;
+}
+?>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="<?php echo isset($this->metaDescription) ? $this->metaDescription : $this->banner[DbTable_Banner::COL_BANNER_META_DESCRIPTION]; ?>">
+    <meta name="keyword" content="<?php echo $this->banner[DbTable_Banner::COL_BANNER_META_KEYWORD];?>">
+    <base href="/statics/asset/default/" />
+    <link rel="canonical" href="<?php echo $url; ?>">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+
+    <meta property="fb:app_id" content="1200581790010768" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="DaiNam" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" itemprop="url" content="<?php echo $url; ?>">
+    <meta property="og:description" content="<?php echo isset($this->metaDescription) ? $this->metaDescription : $this->banner[DbTable_Banner::COL_BANNER_META_DESCRIPTION]; ?>">
+    <meta property="og:title" content="<?php echo isset($this->metaTitle) ? $this->metaTitle : $this->banner[DbTable_Banner::COL_BANNER_META_TITLE]; ?>">
+    <meta property="og:image" itemprop="thumbnailUrl" content="<?php echo $thumbnail; ?>">
+    <title><?php echo isset($this->metaTitle) ? $this->metaTitle : $this->banner[DbTable_Banner::COL_BANNER_META_TITLE]; ?></title>
+
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="autoload/css/common.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9] -->
+
+    <?php echo $this->headLink(); ?>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper" id="panel">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 header__logo">
+                    <div class="row">
+                        <a href="/" class="col-xs-10 col-md-12">
+                            <img src="images/logo-sm.png" width="32%" class="img-responsive btn_hover h_logo" alt="Save Money">
+                        </a>
+                        <a class="col-xs-2 h_btn_menu hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 header__lang">
+                    <div class="clearfix">
+                        <div class=" header__lang__hl">
+                            <a href="/"><img src="images/hotline.png" class="img-responsive btn_hover"> </a>
+                        </div>
+                        <div class=" header__lang__flag">
+                            <ul class="">
+                                <li class=""><a href="/vi"><img src="images/flag_vi.png" class="img-responsive btn_hover"> </a> </li>
+                                <li class=""><a href="/en"><img src="images/flag_en.png" class="img-responsive btn_hover"> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper-menu" id="menu">
+        <div class="container">
+            <ul class="clearfix">
+                <li><a href="<?php echo $this->configUrl($this->config, 'intro');?>"><?php echo $this->translate->_('admin_resource_intro');?></a> </li>
+                <li><a href="<?php echo $this->configUrl($this->config, 'value');?>"><?php echo $this->translate->_('admin_resource_value');?></a> </li>
+                <!--<li><a href="<?php echo $this->configUrl($this->config, 'feature');?>"><?php echo $this->translate->_('admin_resource_feature');?></a> </li>-->
+                <li><a href="<?php echo $this->configUrl($this->config, 'project');?>"><?php echo $this->translate->_('admin_resource_project');?></a> </li>
+                <li><a href="<?php echo $this->configUrl($this->config, 'partner');?>"><?php echo $this->translate->_('admin_resource_partner');?></a> </li>
+                <!--<li><a href="<?php echo $this->configUrl($this->config, 'news');?>"><?php echo $this->translate->_('admin_resource_news');?></a> </li>-->
+                <li><a href="<?php echo $this->configUrl($this->config, 'recruitment');?>"><?php echo $this->translate->_('admin_resource_recruitment');?></a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-full">
+        <?php echo $this->layout()->content; ?>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <p class="fs33 text-uppercase">
+                        visit us
+                    </p>
+                    <p class="pt-20 pb-20">
+                        <?php echo $this->contactInformation[DbTable_Content::COL_CONTENT_CONTENT];?>
+                    </p>
+                    <img src="images/map.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <p class="fs33 text-uppercase">
+                        FOLLOW US
+                    </p>
+                    <?php echo $this->socialInformation[DbTable_Content::COL_CONTENT_CONTENT];?>
+                    <ul class="mt-30">
+                        <li class="mb-30">
+                            <a href="<?php echo $this->configUrl($this->config, 'footer_connect_with_us');?>" class="fs24 text-uppercase color_8">
+                                <?php echo $this->translate->_('admin_privilege_footer_connect_with_us')?>
+                            </a>
+                        </li>
+                        <li class="mb-30">
+                            <a href="<?php echo $this->configUrl($this->config, 'footer_fqa');?>" class="fs24 text-uppercase color_8">
+                                <?php echo $this->translate->_('admin_privilege_footer_faq')?>
+                            </a>
+                        </li>
+                        <li class="mb-30">
+                            <a href="<?php echo $this->configUrl($this->config, 'footer_blog');?>" class="fs24 text-uppercase color_8">
+                                <?php echo $this->translate->_('admin_privilege_footer_blog')?>
+                            </a>
+                        </li>
+                        <li class="mb-30">
+                            <a href="<?php echo $this->configUrl($this->config, 'footer_term');?>" class="fs24 text-uppercase color_8">
+                                <?php echo $this->translate->_('admin_privilege_footer_term')?>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/modernizr-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slideout.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/common.js"></script>
+<?php echo $this->headScript(); ?>
+</body>
+</html>

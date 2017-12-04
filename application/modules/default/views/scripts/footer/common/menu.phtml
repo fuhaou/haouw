@@ -1,0 +1,27 @@
+<div class="menu_side col-xs-12 col-md-4">
+    <a class="menu_side_btn" role="button" data-toggle="collapse" href="#menu_side__lst_coll" aria-expanded="false" aria-controls="menu_side__lst_coll">
+        <i class="fa fa-list" aria-hidden="true"></i> <?php echo $this->translate->_('index_footer_information');?>
+    </a>
+    <ul class="menu_side__lst collapse in" id="menu_side__lst_coll">
+        <li>
+            <a href="<?php echo $this->configUrl($this->config, 'footer_connect_with_us');?>">
+                <?php echo $this->translate->_('admin_privilege_footer_connect_with_us')?>
+            </a>
+        </li>
+        <li>
+            <a href="<?php echo $this->configUrl($this->config, 'footer_fqa');?>">
+                <?php echo $this->translate->_('admin_privilege_footer_faq')?>
+            </a>
+        </li>
+        <li>
+            <a href="<?php echo $this->configUrl($this->config, 'footer_blog');?>">
+                <?php echo $this->translate->_('admin_privilege_footer_blog')?>
+            </a>
+        </li>
+        <li>
+            <a href="<?php echo $this->configUrl($this->config, 'footer_term');?>">
+                <?php echo $this->translate->_('admin_privilege_footer_term')?>
+            </a>
+        </li>
+    </ul>
+</div>

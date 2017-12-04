@@ -1,0 +1,31 @@
+<div class="" id="breadcrumb">
+    <div class="container">
+        <ul class="clearfix">
+            <li class="breadcrumb_home"><a href="<?php echo $this->configUrl($this->config, 'about_us');?>">
+                    <i class="fa fa-home" aria-hidden="true"></i> <?php echo $this->translate->_('admin_resource_feature');?> </a>
+            </li>
+            <li>
+                <a href="<?php echo $this->featureCategoryUrl($this->infoCategory[DbTable_Feature_Category::COL_FEATURE_CATEGORY_ID], $this->infoCategory[DbTable_Feature_Category::COL_FEATURE_CATEGORY_NAME]);?>">
+                    <?php echo $this->infoCategory[DbTable_Feature_Category::COL_FEATURE_CATEGORY_NAME];?></a>
+            </li>
+            <li><span><?php echo $this->info[DbTable_Feature_Sub_Category::COL_FEATURE_SUB_CATEGORY_NAME];?></span></li>
+        </ul>
+        <a data-toggle="collapse" href="#sub_menu_item_collapse" aria-expanded="false" aria-controls="sub_menu_item_collapse" class="hidden-sm hidden-md hidden-lg collapsed" id="breadcrumb_btn_sub_menu"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3" id="side_left">
+            <p class="title_sub_menu hidden-xs"><?php echo $this->translate->_('admin_resource_feature');?></p>
+            <?php echo $this->render('feature/common/menu.phtml');?>
+            <?php echo $this->render('layout/page-news-sponsor.phtml');?>
+        </div>
+        <div class="col-xs-12 col-sm-9" id="page_container">
+            <p><strong><?php echo $this->info[DbTable_Feature_Sub_Category::COL_FEATURE_SUB_CATEGORY_NAME];?></strong></p>
+            <div class="fck-content">
+                <?php echo $this->info[DbTable_Feature_Sub_Category::COL_FEATURE_SUB_CATEGORY_CONTENT];?>
+            </div>
+            <?php echo $this->render('layout/add-this.phtml');?>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container mt-30">
+    <div class="row">
+        <?php echo $this->render('news/common/menu.phtml');?>
+
+        <div class="col-xs-12 col-sm-9 page_content col-xs-12 col-md-8" id="page_container">
+            <p class="mb20"><strong class="fs20"><?php echo $this->info[DbTable_News::COL_NEWS_TITLE];?></strong></p>
+            <div class="fck-content"><?php echo $this->info[DbTable_News::COL_NEWS_CONTENT];?></div>
+            <?php echo $this->render('layout/add-this.phtml');?>
+
+            <?php if ($this->suggestionData) { ?>
+                <div class="detail_list_news">
+                    <p class="page_title"><strong><?php echo $this->translate->_('common_news_recommend');?></strong></p>
+                    <ul>
+                        <?php foreach ($this->suggestionData as $data) { ?>
+                            <li class="row">
+                                <div class="col-xs-12 col-sm-10">
+                                    <a href="<?php echo $this->newsUrl($data[DbTable_News::COL_NEWS_ID], $data[DbTable_News::COL_NEWS_TITLE]);?>" title="<?php echo $data[DbTable_News::COL_NEWS_TITLE];?>">
+                                        <?php echo $data[DbTable_News::COL_NEWS_TITLE];?></a>
+                                </div>
+                                <div class="hidden-xs col-sm-2">
+                                    <p class="text-right f_italic fs12"><?php echo $this->newsFormatDate($data[DbTable_News::COL_NEWS_CREATED_AT]);?></p>
+                                </div>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>

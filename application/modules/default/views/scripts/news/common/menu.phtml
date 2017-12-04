@@ -1,0 +1,20 @@
+<div class="menu_side col-xs-12 col-md-4">
+    <a class="menu_side_btn" role="button" data-toggle="collapse" href="#menu_side__lst_coll" aria-expanded="false" aria-controls="menu_side__lst_coll">
+        <i class="fa fa-list" aria-hidden="true"></i> <?php echo $this->translate->_('index_footer_information');?>
+    </a>
+    <ul class="menu_side__lst collapse in" id="menu_side__lst_coll">
+        <?php if ($this->menuNewsCategory) { ?>
+            <?php foreach ($this->menuNewsCategory as $category) { ?>
+                <?php
+                $name = $category[DbTable_News_Category::COL_NEWS_CATEGORY_NAME];
+                $id = $category[DbTable_News_Category::COL_NEWS_CATEGORY_ID];
+                $url = $this->newsCategoryUrl($id, $name);
+                $class = $this->activatedId == $id ? ' class="active"' : '';
+                ?>
+                <li<?php echo $class;?>>
+                    <a href="<?php echo $url;?>" title="<?php echo $name;?>"><?php echo $name;?></a>
+                </li>
+            <?php }  ?>
+        <?php } ?>
+    </ul>
+</div>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+<header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" >
+</header>
+<body>
+
+	<tu tuid='admin_index_header'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Administration - Danh sách quản trị viên]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Administration - Listing]]></seg>
+		</tuv>
+	</tu>
+
+	<tu tuid='book_category_index_management'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Quản Lý Danh Mục Sách]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Book Category Management]></seg>
+		</tuv>
+	</tu>
+
+	<tu tuid='book_category_input_name'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Tên Danh Mục Sách]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Book Category Name]></seg>
+		</tuv>
+	</tu>
+
+</body>

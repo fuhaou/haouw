@@ -1,0 +1,225 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+<header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" >
+</header>
+<body>
+	<tu tuid='admin_resource_admin_role'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Nhóm quản trị]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Administration Group]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_admin'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Quản trị viên]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Administration]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_news'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Tin tức]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[NEWS]]></seg>
+		</tuv>
+		<tuv xml:lang="zh">
+			<seg><![CDATA[新闻]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_faq'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Câu hỏi thường gặp]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[FAQ]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_content'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Các trang thông tin tĩnh]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Information]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_about_us'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[What's in SM?]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[What's in SM?]]></seg>
+		</tuv>
+		<tuv xml:lang="zh">
+			<seg><![CDATA[关于我们介绍]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_feature'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Điểm tham quan]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[ATTRACTIONS]]></seg>
+		</tuv>
+		<tuv xml:lang="zh">
+			<seg><![CDATA[参观美景]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_service'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Dịch vụ & Tiện ích]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[SERVICES AND FACILITIES]]></seg>
+		</tuv>
+		<tuv xml:lang="zh">
+			<seg><![CDATA[服务与便利]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_homepage'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Trang chủ]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Homepage]]></seg>
+		</tuv>
+		<tuv xml:lang="zh">
+			<seg><![CDATA[主页]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_contact'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Liên hệ]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Contact]]></seg>
+		</tuv>
+		<tuv xml:lang="zh">
+			<seg><![CDATA[联系]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_booking'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Quản lý đơn hàng]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Order Management]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_banner'>
+		<tuv xml:lang="vi">
+			<seg><![CDATA[Banner & SEO các trang]]></seg>
+		</tuv>
+		<tuv xml:lang="en">
+			<seg><![CDATA[Banner & SEO Management]]></seg>
+		</tuv>
+	</tu>
+	<tu tuid='admin_resource_souvenir'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Quà lưu niệm]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Souvenir]]></seg>
+        </tuv>
+    </tu>
+    <tu tuid='admin_resource_recruitment'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Tuyển dụng]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Recruitment]]></seg>
+        </tuv>
+    </tu>
+    <tu tuid='admin_resource_ticket_online'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Đặt vé online]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Ticket Online]]></seg>
+        </tuv>
+    </tu>
+    <tu tuid='admin_resource_schedule'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Lịch đua]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Schedule]]></seg>
+        </tuv>
+    </tu>
+    <tu tuid='admin_resource_report'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Tường thuật]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Report]]></seg>
+        </tuv>
+    </tu>
+    <tu tuid='admin_resource_club'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Câu lạc bộ trường đua]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Club]]></seg>
+        </tuv>
+    </tu>
+    <tu tuid='admin_resource_member'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Thành viên]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Member]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='admin_resource_footer'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Footer]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Footer]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='admin_resource_project'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Dự án]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Project]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='admin_resource_partner'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Đối tác]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Partner]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='admin_resource_feature'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Hệ sinh thái Savemoney]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Service]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='admin_resource_intro'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Giới thiệu]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[About Us]]></seg>
+        </tuv>
+    </tu>
+<tu tuid='admin_resource_value'>
+        <tuv xml:lang="vi">
+            <seg><![CDATA[Dịch vụ gia tăng]]></seg>
+        </tuv>
+        <tuv xml:lang="en">
+            <seg><![CDATA[Added Value]]></seg>
+        </tuv>
+    </tu>
+</body>

@@ -1,0 +1,25 @@
+<div class="menu_side col-xs-12 col-md-4">
+    <a class="menu_side_btn" role="button" data-toggle="collapse" href="#menu_side__lst_coll" aria-expanded="false" aria-controls="menu_side__lst_coll">
+        <i class="fa fa-list" aria-hidden="true"></i> <?php echo $this->translate->_('index_footer_information');?>
+    </a>
+    <ul class="menu_side__lst collapse in" id="menu_side__lst_coll">
+        <?php
+        $classHrBenefit = '';
+        $classRecruitment = ' class="active"';
+        if ($this->actionName == 'hr-benefit') {
+            $classHrBenefit = ' class="active"';
+            $classRecruitment = '';
+        }
+        ?>
+        <li<?php echo $classHrBenefit;?>>
+            <a href="<?php echo $this->configUrl($this->config, 'recruitment_hr_benefit');?>">
+                <?php echo $this->translate->_('admin_privilege_hr_benefit')?>
+            </a>
+        </li>
+        <li<?php echo $classRecruitment;?>>
+            <a href="<?php echo $this->configUrl($this->config, 'recruitment');?>">
+                <?php echo $this->translate->_('admin_privilege_recruitment')?>
+            </a>
+        </li>
+    </ul>
+</div>

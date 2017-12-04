@@ -1,0 +1,32 @@
+<div class="container mt-30">
+    <div class="row">
+        <?php echo $this->render('news/common/menu.phtml');?>
+
+        <div class="page_content col-xs-12 col-md-8">
+            <ul class="row page_content__lst">
+                <?php foreach ($this->pagination as $data) { ?>
+                    <?php
+                    $imagePath = $data->{DbTable_News::COL_NEWS_IMAGE};
+                    $thumbnail = null;
+                    if ($imagePath) {
+                        $thumbnail = $this->thumb($imagePath, 400);
+                    }
+                    $title = $data->{DbTable_News::COL_NEWS_TITLE};
+                    $subContent = $data->{DbTable_News::COL_NEWS_SUB_CONTENT};
+                    $url = $this->newsUrl($data[DbTable_News::COL_NEWS_ID], $title);
+                    ?>
+                    <li class="col-xs-12 col-sm-4">
+                        <a href="<?php echo $url?>" title="<?php echo $title;?>">
+                            <img src="<?php echo $thumbnail;?>" class="img-responsive center-block"></a>
+                        <p class="page_content__lst__title"><?php echo $title;?></p>
+                        <p class="page_content__lst__cont"><?php echo $subContent;?></p>
+                        <p class="page_content__lst__more">
+                            <a href="<?php echo $url?>" title="<?php echo $title;?>"><?php echo $this->translate->_('common_detail');?> &gt;&gt;</a>
+                        </p>
+                    </li>
+                <?php } ?>
+            </ul>
+            <?php echo $this->pagination; ?>
+        </div>
+    </div>
+</div>
